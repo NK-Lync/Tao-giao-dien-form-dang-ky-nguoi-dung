@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký người dùng - CodeGym</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="form-card">
+            <p class="eyebrow">BÀI THỰC HÀNH HTML</p>
+            <h1>Đăng ký người dùng</h1>
+            <p class="intro">Vui lòng điền thông tin vào biểu mẫu bên dưới.</p>
+
+            <form action="http://demo.codegym.vn/6/registration_form/register.php"
+                  method="POST">
+                <div class="form-group">
+                    <label for="name">Họ và tên</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Nhập họ và tên" autocomplete="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="example@gmail.com" autocomplete="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Số điện thoại</label>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="Nhập số điện thoại" autocomplete="tel" required>
+                </div>
+
+                <fieldset class="form-group">
+                    <legend>Giới tính</legend>
+                    <label class="choice">
+                        <input type="radio" name="gender" value="male" required>
+                        Nam
+                    </label>
+                    <label class="choice">
+                        <input type="radio" name="gender" value="female">
+                        Nữ
+                    </label>
+                </fieldset>
+
+                <div class="buttons">
+                    <button type="submit" class="button">Đăng ký</button>
+                    <button type="reset" class="button button-secondary">Nhập lại</button>
+                </div>
+            </form>
+
+            <p class="form-note">
+                Form thực hành gửi dữ liệu bằng POST đến máy chủ mẫu của CodeGym.
+                Máy chủ có thể không còn hoạt động hoặc từ chối yêu cầu.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
